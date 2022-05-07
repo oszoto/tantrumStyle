@@ -4,7 +4,7 @@ Projeto referente à disciplina TP2 da UnB, no semestre 2021/2
 Código baseado no estilo Tantrum apresentado no livro Exercises in Programming Style, 2nd Edition de Cristina Videira Lopes.
 
 ### Execução
-Favor certifique-se de que todas as dependências estão instaladas corretamente. Abra a pasta raíz do projeto e execute o comando: "sbt compile run"
+Favor certifique-se de que todas as dependências estão instaladas corretamente. Abra a pasta raíz do projeto e execute o comando: "sbt compile run <nome_do_arquivo>.txt"
 
 ### Ferramentas utilizadas
 

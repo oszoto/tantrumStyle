@@ -66,13 +66,17 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
-        try {
-          val file = "doc.txt"
-          assertion((file != ""), "Filename can't be empty.")
+        try{
+          assertion((args.length != 0), "No filename was passed in the command line.")
+
+          val file = (args(0))
         
           val words = extractWords(file)
+          
           val noStopWords = removeStopWords(words)
+
           assertion(noStopWords.nonEmpty, "No words were longer than three letters.")
+          assertion((noStopWords.length > 25), "File needs to have more than 25 words.")
 
           val freqMap = mapFrequencies(noStopWords)
           val sortedMap = sortMap(freqMap)
